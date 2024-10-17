@@ -1,0 +1,305 @@
+*{
+  padding: 0;
+  margin:0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  height: 100vh;
+  padding: 100px 0;
+  background-color: rgb(26, 88, 88);
+  color: white;
+}
+.header{
+  width: 90%;
+  margin: auto;
+  color: whitesmoke;
+}
+main{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns:1fr 1.5fr;
+  justify-content: center;
+}
+.red{
+  background-color: red;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.blue{  
+  background-color: blue;
+  display: grid;
+  gap: 1rem;
+  padding: 20px;
+}
+.blue h1{
+  font-size: 30px;
+  color: white;
+}
+.blue .form{
+  display: grid;
+  gap: 1rem
+}
+.form input{
+  border: none;
+  outline: none;
+  padding:10px;
+  border-radius: 5px;
+}
+.form button{
+  border: none;
+  width: 15%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(28, 86, 212);
+  color: white;
+}
+.white{
+  width: 100%;
+  background-color: whitesmoke;
+  grid-column: span 2;
+}
+.white h1{
+  color: black;
+}
+.white .fail{
+  color: red;
+}
+.white .pass{
+  color: green;
+}
+
+footer{
+  margin-top:10%;
+  padding: 20px 70px;
+  background-color: rgb(7, 28, 28);
+  display: grid;
+  gap: 1rem;
+}
+.footer-cont{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+}
+footer div{
+ display: grid;
+ gap: .3rem;
+}
+footer div h1{
+  font-size: 20px;
+}
+footer div ul{
+  display: grid;
+  gap: .3rem;
+}
+footer div ul li{
+  color: blue;
+}
+
+
+@media (min-width:300px) and (max-width:400px) {
+  .header{
+    width: 90%;
+    font-size:30px;
+    margin:20px  auto;
+    color: whitesmoke;
+  }
+  main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .red{
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .red h1{
+    font-size: 20px;
+  }
+  .red h3{
+    font-size: 16px;
+  }
+  .blue{  
+    background-color: blue;
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+  }
+  .blue h1{
+    font-size: 20px;
+    color: white;
+  }
+  .blue .form{
+    display: grid;
+    gap: 1rem
+  }
+  .form input{
+    border: none;
+    outline: none;
+    padding:10px;
+    border-radius: 5px;
+  }
+  .form button{
+    border: none;
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(28, 86, 212);
+    color: white;
+  }
+  .white{
+    width: 100%;
+    padding:10px ;
+    background-color: whitesmoke;
+    grid-column: span 2;
+  }
+  .white h1{
+    color: black;
+    font-size: 18px;
+  }
+  .white .fail{
+    color: red;
+  }
+  .white .pass{
+    color: green;
+  }
+  
+  footer{
+    margin-top:10%;
+    padding: 20px 20px;
+    background-color: rgb(7, 28, 28);
+    display: grid;
+    gap: 1rem;
+  }
+  .footer-cont{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+  }
+  footer div{
+   display: grid;
+   gap: .3rem;
+  }
+  footer div h1{
+    font-size: 20px;
+  }
+  footer div ul{
+    display: grid;
+    gap: .3rem;
+  }
+  footer div ul li{
+    color: blue;
+    font-size: 16px;
+  }
+   
+}
+@media (min-width:400px) and (max-width:774px){
+  .header{
+    width: 90%;
+    font-size: 30px;
+    margin:20px  auto;
+    color: whitesmoke;
+  }
+  main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .red{
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .red h1{
+    font-size: 20px;
+  }
+  .red h3{
+    font-size: 16px;
+  }
+  .blue{  
+    background-color: blue;
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+  }
+  .blue h1{
+    font-size: 20px;
+    color: white;
+  }
+  .blue .form{
+    display: grid;
+    gap: 1rem
+  }
+  .form input{
+    border: none;
+    outline: none;
+    padding:10px;
+    border-radius: 5px;
+  }
+  .form button{
+    border: none;
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(28, 86, 212);
+    color: white;
+  }
+  .white{
+    width: 100%;
+    padding:10px 20px;
+    background-color: whitesmoke;
+    grid-column: span 2;
+  }
+  .white h1{
+    color: black;
+    font-size: 20px;
+  }
+  .white .fail{
+    color: red;
+  }
+  .white .pass{
+    color: green;
+  }
+
+  footer{
+    margin-top:10%;
+    padding: 20px 70px;
+    background-color: rgb(7, 28, 28);
+    display: grid;
+    gap: 1rem;
+  }
+  .footer-cont{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+  }
+  footer div{
+   display: grid;
+   gap: .3rem;
+  }
+  footer div h1{
+    font-size: 20px;
+  }
+  footer div ul{
+    display: grid;
+    gap: .3rem;
+  }
+  footer div ul li{
+    color: blue;
+  }
+}
